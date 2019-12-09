@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   query: String = '';
   constructor(private userService: UserService) { 
     this.friends = userService.getFriends();
+    console.log(this.friends);
+    
   }
 
   ngOnInit() {
