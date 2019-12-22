@@ -1,2 +1,35 @@
-<p>{{friend | json}}</p>
-<p>{{fecha | date:"MM/dd/yy"}}</p> 
+<div id="conversationContainer">
+    <div class="container pato45">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="avatarFrameonline">
+            <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid"/>
+          </div>
+        </div>
+      </div>
+      <span><b>{{friend.nick}} - ({{friend.status}})</b></span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container pato45">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="avatarFrameonline">
+              <img
+                src="assets/img/generic_avatar.png"
+                class="avatarImage img-fluid"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+            <textarea class="form-control rounded-0" id="texArea" rows="3" cols="110"></textarea>
+          </div>
+        </div>
+        <div class="col-md-12">
+            <a id= "enviar" class="btn btn-primary">enviar</a>
+        </div>
+    </div>
+  </div>
+  
